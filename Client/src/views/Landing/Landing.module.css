@@ -1,0 +1,44 @@
+@import url("https://fonts.cdnfonts.com/css/avenir");
+
+.select{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.select img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .4;
+  transition: 0.4s ease;
+}
+.select img:hover{
+  cursor: pointer;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);   
+  box-shadow: 10px 20px 20px 15px black;
+}
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255); /* Color de texto */
+  padding: 20px; /* Espacio alrededor del texto */
+  z-index: 10;
+}
+.text{
+  font-family: "Avenir", sans-serif;
+  font-size: 75px;
+}
+.text2{
+  font-family: "Avenir", sans-serif;
+  font-size: 60px;
+}
+.parra{
+  font-family: "Avenir", sans-serif;
+  font-size: 25px;
+}

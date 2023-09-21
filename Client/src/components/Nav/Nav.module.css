@@ -1,0 +1,146 @@
+@import url("https://fonts.cdnfonts.com/css/avenir");
+
+.active span {
+  color: #9d0aca;
+}
+
+.nav.background{
+  background-color: #091f44;
+
+}
+
+.nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 100000;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  font-family: "Avenir", sans-serif;
+}
+
+.nav.back{
+  background-color: #091f44;
+
+}
+
+.nav.fixed {
+  transition: all 0.5s ease;
+  background-color: #091f44;
+  position: fixed;
+
+}
+
+.nav ul {
+  display: flex;
+  font-family: "Avenir", sans-serif;
+  margin-right: 21px;
+}
+
+.nav ul li {
+  list-style: none;
+  font-family: "Avenir", sans-serif;
+}
+
+.nav ul li a {
+  font-size: 16px;
+  font-family: "Avenir", sans-serif;
+  display: block;
+  font-weight: 500;
+
+  text-decoration: none;
+  color: white;
+  padding: 1.60rem 1.2rem;
+  height: 100%;
+  margin: 0 0.5rem;
+  margin-top:4px ;
+  /* border-radius: 0.9rem; */
+}
+.customLi {
+  /* Estilos personalizados para el <li> */
+  list-style-type: none; /* Quita los puntos de lista, por ejemplo */
+  margin: 0;
+  padding: 0;
+}
+
+.navHover:not(.active):hover {
+  background-color: rgba(31, 28, 28, 0.452);
+}
+
+/* Estilo para el logotipo */
+.nav img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.nav .menu {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  z-index: 1000;
+}
+.navbarra li {
+  padding: 0;
+}
+.nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 480px) {
+  .nav .menu {
+    display: flex;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: start;
+  }
+  .nav ul {
+    /* display: none; */
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+  .nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+}
+
+.noHover{
+  margin-right: 30px;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 20px;
+  padding-inline: 10px;
+  transition: background-color .5s ease;
+}
+li{
+  list-style: none;
+
+}
+
+.noHover.login{
+  padding: 5px;
+  padding-inline: 10px;
+  border-radius: 20px;
+  background-color: #9d0aca;
+}

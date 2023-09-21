@@ -1,0 +1,76 @@
+div.container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.order{
+  width:90%;
+  padding:10px; 
+  margin-bottom:20px;
+  background-color: #091f44;
+  border-radius: 20px;
+  color: #f0f0f0;
+  text-align: center;
+  box-shadow: 3px 5px 7px 10px rgba(196, 196, 196, 0.664);
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  font-size: 16px; /* Increase font-size */
+  border: 1px solid #ddd; /* Add a grey border */
+  border-radius: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+}
+table {
+  border-spacing: 3;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 3px 5px 7px 10px rgba(196, 196, 196, 0.664);
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  
+  * {
+    border: none !important;
+    position: relative;
+  }
+
+
+
+  td,
+  th {
+    padding-left: 8px;
+  }
+
+  thead tr {
+    height: 60px;
+    background: #ffed86;
+    font-size: 16px;
+  }
+
+  tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #e3f1d5;
+    &:last-child {
+      border: 0;
+    }
+  }
+}
+.myInput {
+  background-position: 10px 12px; /* Position the search icon */
+  box-shadow: 3px 5px 7px 10px rgba(196, 196, 196, 0.664);
+  width: 90%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  border-radius: 15px;
+  margin-bottom: 15px; /* Add some space below the input */
+  background-color: #091f44;
+  justify-items: end;
+  color: white;
+}
+.myInput::placeholder {
+  color: white; /* Cambia el color del placeholder a blanco */
+}
+
